@@ -1,0 +1,832 @@
+/*4개의 링크를 임포트 해줘서 html에서 이 style.css 하나만 링크한다 stylesheet만 쓸 수 있음 import는*/
+/* @import url('reset.css'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css'); /*폰트이미지쓰는 임포트 https://cdnjs.com*/
+@import url('font.css');
+@import url('animate.min.css');
+@import url('grid.css');
+html,body{
+    height:100%; /*높이는 잡을 수 없기에 먼저 잡아준다 (비디오 출력을 위해)*/
+}
+body{
+    font-family: 'IBM', sans-serif;
+    font-size:1rem; /*body에 1rem(==16px)을 써주면 body안에 쓰는 모든 폰트는 1em이 1rem이 기준이된다*/
+    color:#454545;
+    margin:0;
+}
+a,a:link{
+    color:#454545;
+    text-decoration: none;
+}
+a:hover{
+    color:#000;
+}
+.container{  /*기본크기*/
+  width:1400px;
+  margin-left:auto;
+  margin-right:auto;   /*블록은 이거 2개쓰면 가운데 정렬이 된다*/
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+section{
+    padding-top:100px;
+}
+.d-flex{
+    display:flex;
+}
+.mt-50{
+    margin-top:50px;
+}
+/**************** HEADER ***************/
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 50px;  /*위아래 , 좌우*/
+    align-items: center;
+    position:fixed;
+    z-index:100;
+    color:#fff;
+}
+.header-background{
+    width:100%;
+    height:100px;
+    background:#fff;
+    position:fixed;
+    z-index:99;
+    border-bottom:1px solid #ccc;
+    display:none;
+    box-shadow:0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.black-font{
+    color:#333 !important;
+}
+.black-border{
+   border:1px solid #333 !important;
+}
+ul.main-nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;  
+}
+a.logo{
+    font-size: 1.8em;
+    font-weight:800;
+    color:#fff;
+    padding-bottom:30px;
+}
+nav{
+    width:53%;
+}
+.main-nav>li{
+    width:14%;
+    padding-bottom:30px;
+}
+.main-nav>li>a{
+    font-size:1.4em;
+    font-weight:500;
+    color:#fff;
+    position:relative; 
+}
+.main-nav>li>a::after{
+    content:"";
+    position: absolute;
+    height:4px;
+    background:#16398b;
+    left:0;
+    right:0;
+    bottom:-31px;
+    transform: scaleX(0);
+    transition: all 0.25s;
+}
+.main-nav>li>a:hover::after{
+  transform: scaleX(1);
+}
+
+.main-nav>li>a{   /*main-nav 클래스 안에 있는 li 안에 있는 a에만*/
+    font-size: 1.4em;
+    font-weight:500;
+    color:#fff;
+}
+.right{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:300px;
+    padding-bottom:30px;
+}
+.searchform{
+    border:1px solid #fff;
+    margin-right:8px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius: 30px;
+    overflow:hidden;  /*안에 input박스가 벗어나서 짤린다 그래서 hidden 줘야함*/
+    position:relative;
+}
+input.search{
+    border:none;
+    outline: none;
+    padding:5px 10px 5px 35px;
+    font-size:1.2em;
+    background-color: transparent;
+    color:#fff;
+    
+}
+.search-icon{
+    position:absolute;
+    z-index:100;
+    top:13px;
+    left:12px;
+    
+}
+
+.btn-h-line{
+    background:transparent; /*배경 투명*/
+    outline: none;
+    border:none;
+    padding:5px;
+    border-radius: 15px;
+    border:1px solid #fff;
+    color:#fff;
+    cursor:pointer;
+}
+.btn-list{
+    margin-left:8px;
+    padding:9px 10px;
+}
+.btn-list>i{
+    font-size:1.5em;
+    color:#fff;
+}
+/************** GNB FULL NAV ************/
+#gnb{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    overflow-y: auto;
+    background-color:#16398B;
+    z-index:999;
+    display:none;
+ }
+ #gnb>ul{
+     width:100%;
+     height:auto;
+     display:flex;
+     padding:0 5.5rem;
+     list-style:none;
+     margin:0;
+     color:#fff;
+ }
+ #gnb>ul>li{
+     flex:1;
+     padding: 4rem 2rem 4rem 1.5rem;
+     border-right:1px solid rgba(255,255,255,.2);
+ }
+ #gnb>ul>li:first-child{
+     border-left:1px solid rgba(255,255,255,.2);
+ }
+ #gnb>ul>li>a{
+     color:#fff;
+     font-size:1.8em;
+     font-weight:600;
+     transition: all 0.6s;
+ }
+ #gnb>ul>li>a:hover, 
+ .submenu>ul>li>a:hover{
+     color:#ffce00;
+ }
+ .submenu{
+     margin-top:2rem;
+ }
+ .submenu ul{
+     list-style-type:none;
+     margin:0;
+     padding:0;
+ }
+ .submenu>ul>li{
+     overflow:hidden;
+ }
+ .submenu>ul>li>a{
+    display:block;
+    font-size:1.3rem;
+    font-weight:500;
+    line-height:3;
+    color:#fff; 
+    letter-spacing:-2px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    transition: all 0.6s;
+ }
+ .lnb-detail a{
+     color:#91ace6;
+     font-weight:500;
+     display:block;
+     transition: all 0.6s;
+     line-height:1.8;
+     letter-spacing:-1px;
+ }
+ .lnb-detail a::before{
+     content:"- ";
+ }
+ .lnb-detail a:hover{
+     color:#ffce00;
+     text-decoration: underline;
+ }
+ .closebox{
+    position:absolute;
+    top:50px;
+    right:30px;
+    width:30px;
+    height:30px;
+    overflow:hidden;
+    z-index:999;
+    cursor:pointer;
+    transition: all 0.5s;
+ }
+ .closebox:hover{
+    transform: rotateZ(180deg);
+    transition: all 0.2s;
+ }
+ .closebox>div:first-child{
+    position:absolute;
+    width:100px;
+    height:2px;
+    background:#fff;
+    transform: rotateZ(45deg);
+    top:28px;
+    left:-20px;
+ }
+ .closebox>div:last-child{
+    position:absolute;
+    width:100px;
+    height:2px;
+    background:#fff;
+    transform: rotateZ(-45deg);
+    top:-3px;
+    left:-20px;
+
+ }
+/************** HERO *****************/
+.vcontainer{     /*  */
+    width:100%;
+    height:100%;
+}
+.vdobox{
+    width:100%;   
+    height:100%;/*html과 body에 준 height때문에 높이를 잡을 수 있음*/
+    position:relative;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+video.vdo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center top;
+}
+.vdobox h1{
+    position:absolute;
+    color:#fff;
+    font-size:4em;
+    line-height:1.2em;
+    font-weight:900;
+    text-align:center;
+    top:200px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:2;
+    text-shadow: 2px 2px 2px rgba(0,0,0,1);
+    letter-spacing:-5px;
+    width:100%;   /*웹페이지 크기 줄일 때 줄바꿈 안나게 하려고*/
+}
+.vdobox p{
+    width:100%;
+    position:absolute;  /*웹페이지 크기 줄일 때 줄바꿈 안나게 하려고*/
+    color:#333;
+    font-size:1.5em;
+    font-weight:300;
+    text-align:center;
+    top:400px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:2;
+}
+input::placeholder{
+    font-size:0.7em;
+    color:#fff;
+    letter-spacing: -2px;
+}
+.circle-box{
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.7);
+    bottom:-110px;
+    /*left:50%;
+    transform: translateX(-50%);*/
+    left:calc(50% - 110px);
+    z-index:10;
+    
+}
+.btnbox{
+    width:15px;
+    height:20px;
+    border:2px solid #fff;
+    position:absolute;
+    top:30px;
+    left:calc(50% - 7.5px);
+    z-index:11;
+    border-radius:5px;
+}
+.line{
+    position:absolute;
+    top:2px;
+    left:calc(50% - 0.5px);
+    width:2px;
+    height:5px;
+    background:#fff;
+    animation-name: line-action;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+.circle-box p{
+    position:absolute;
+    top:15px;
+    color:#fff;
+    z-index:22;
+    font-size:1em;
+    font-weight:500;
+    width:220px;
+}
+/************* d-submenu *************/
+.d-submenu-main{
+    display:none;
+}
+ul.d-submenu{
+    position:absolute;
+    z-index:999;
+    background:#fff;
+    width:100%;
+    top:100px;
+    left:0;
+    color:#333;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display:flex;
+    border-bottom:1px solid #ddd;
+}
+ul.d-submenu>li:first-child{
+   width:25%;
+   padding:40px 30px 30px 140px;
+   border-right:1px solid #eee;
+   
+}
+ul.d-submenu>li:nth-child(2),
+ul.d-submenu>li:nth-child(3){
+    margin: 40px 0;
+    width:17%;
+    border-right:1px solid #eee;
+    padding-left:20px;
+    padding-right:20px;
+}
+ul.d-submenu>li:last-child{
+    padding-left:20px;
+    padding-top:40px;
+}
+.d-submenu h1{
+    font-size:3em;
+    margin:0;
+}
+.d-submenu p{
+    font-size:1.2em;
+    margin:0;
+}
+.d-sub-title{
+    padding:10px 20px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-size:1.1em;
+    font-weight:500;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+    overflow:hidden; /*색 넣을거기 때문에 안보이게 hidden했다가 쿼리로 나오게한다*/
+    position:relative;
+}
+.d-sub-title a.act{
+    color:#fff;
+}
+.d-sub-title span.act{
+    border-radius:50%;
+    background:#16398B;
+    display:block;
+    width:25px;
+    height:25px;
+    color:#fff;
+    text-align: center;
+}
+.d-sub-title-before{
+    background:#008aff;
+    width:130%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left: -140%;
+    z-index:-1;
+    transform: skew(-45deg);
+    transition:all 0.3s;
+}
+.d-sub-title-before.d-sub-title-before-hover{
+    left:-20%;
+}
+.d-submenu ul li{
+    list-style-type: disc;
+}
+.d-submenu ul li::marker{   /*marker는 list옆에 점 생기는것*/
+    color:#ccc;
+}
+.d-submenu ul li a{
+    font-weight:500;
+}
+.d-submenu ul li:hover::marker{
+    color:#16398B;
+}
+.d-submenu ul li a:hover{
+    text-decoration: underline;
+    color: #16398B !important;
+}
+
+@keyframes line-action {
+    from{
+      top:0;
+    }
+    to{
+      top:8px;
+    }
+}
+@media screen and (max-width:1600px) {  
+    .vdobox{
+        
+        height:auto;
+        
+    }
+    .vdobox h1{
+        
+        font-size:2.5em;
+        
+    }
+    .vdobox p{
+        
+        font-size:1em;
+        
+    }
+}
+
+@media screen and (max-width:768px) {  
+    header{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    header .logo{
+        font-size:1.3em;
+        font-weight:500;
+    }
+    
+    .vcontainer{
+        position:relative;
+        
+    }
+    .vcontainer::after{
+        display:block;   
+        content:"";
+        padding-bottom:45%;
+    }
+    .vdobox{
+        position:absolute;
+        top:0;
+        left: 0%;
+        width:100%;
+        height:45%;
+        
+    }
+    .vdobox h1{
+        top:100px;
+        font-size:2em;
+        font-weight: 500;
+        letter-spacing: -2px;
+        
+    }
+    .vdobox p{
+        top:200px;
+        font-size:1em;
+        color:#fff;
+        width:80%;
+    }
+    .vdo{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    nav, .searchform{
+        display:none;
+    }
+    .right{
+        width:15%;
+    }
+    .btnbox p{
+        width:150px;
+        top:15px;
+    }
+    .btn-h-line span{
+        font-size:0.6em;
+        padding-left:8px;
+        padding-right:8px;
+    }
+}
+
+/*************** SECTION NEW **************/
+.new-title{
+    font-size:3.5em;
+    color:#000;
+    letter-spacing: -2px;
+}
+.new-title em{
+   font-style: normal;
+   color:#2F5BC1;
+}
+.img{
+    margin-right:30px;
+    position:relative;
+}
+.img img{
+    object-fit: cover;
+    width:110px;
+    height:110px;
+}
+.img::before{
+    content:"";
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    width:110px;
+    height:110px;
+    border-radius: 50%;
+    box-sizing:content-box;
+    border:10px solid transparent;
+    outline: 2px dashed #ddd;
+    animation: rolling 20s infinite linear;
+}
+
+@keyframes rolling {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.desc-text{
+    width:330px;
+}
+.desc-text h2{
+    font-size:1.7em;
+    margin:0;
+}
+.desc-text p{
+    margin:0;
+    margin-top:5px;
+    font-size:1.2em;
+    font-weight:500;
+}
+.card{
+    background-color:#F4F6F8;
+    border-radius:8px;
+    padding:2em;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    transition: all 500ms;
+}
+
+.card:hover{
+    background-color:#2f5bc1;
+    color:#fff;
+    transform: translateY(-30px);
+    box-shadow: 0 10px 25px 0 rgba(27, 77, 199, 0.5);
+}
+.card:hover>.card-img{
+    background:#d4e0fc;
+}
+.card:hover .card-body h3::after{
+    width:100%; /*아까 만든 가상클래스를 넓이가 100프로 되게함 일자로 쭉이어지게 height는 1px이므로*/
+}
+
+.card-img{
+    width:86px;
+    height:86px;
+    background-color:#fff;
+    border-radius:50%;
+    text-align:center;
+}
+.card-img i{
+    font-size:50px;
+    line-height:2em;
+    color:#2f5bc1;
+}
+.card-body{
+    width:calc(100% - 100px);
+    padding-left:15px;
+}
+.card-body h3, .card-body p{
+    margin:0;
+    padding:0;
+}
+.card-body p{
+    letter-spacing: -1.7px;
+}
+.card-body h3{
+    position:relative;
+    display:inline-block;
+    margin-bottom:3px;
+}
+.card-body h3::after{  /*card-body h3의 밑에왼쪽에 after가상 클래스 높이가 1px인 점을 만든다.*/
+    content:"";
+    display:block;
+    width:0;
+    height:1px;
+    background-color:#fff; 
+    bottom:0;
+    left:0;
+    position:absolute;
+    transition: all 500ms;
+}
+.notice{
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding: 20px 30px;
+}
+.notice h1, .notice p, .notice ul{
+    margin:0;
+    padding:0;
+}
+.notice-title-box h1{
+    font-size:1.8em;
+}
+ul.notice-nav{
+    list-style:none;
+    display:flex;
+    font-size:1.3em;
+    font-weight:500;
+}
+ul.notice-nav li{
+    cursor:pointer;
+    padding-right:15px;
+    padding-left:15px;
+    position:relative;
+}
+ul.notice-nav .nav-list::after{
+   content:"";
+   height:15px;
+   width:1px;
+   background:#ddd;
+   display:block;
+   transform: rotate(30deg);
+   position:absolute;
+   top:10px;
+   left:0px;
+}
+.notice-nav li a{
+   position:relative;
+   display:inline-block;
+}
+.notice-nav li a::after{
+    content:"";
+    display:block;
+    width: 100%;
+    height:3px;
+    background:#16398B;
+    transform: scaleX(0);
+    transition: all .4s;
+}
+.notice-nav li.active a::after{
+    transform: scaleX(1);
+}
+.notice ul.notice-list{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-top:2em;
+}
+.notice-list li{
+    padding: 15px 5px;
+    font-size:1.2em;
+    font-weight:500;
+}
+.notice-list li:not(:last-child){
+    border-bottom:1px dashed #ddd;
+}
+.notice-list span{
+    padding:3px 20px;
+    border-radius:20px;
+    margin-right:10px;
+}
+li.n span{
+   background:#dee8ff;
+}
+li.m span{
+    background:#FFE6A3;
+}
+li.y span{
+    background:#E5E5E5;
+}
+.notice-list li a:last-child:hover{
+    text-decoration: underline;
+}
+/******************* banner ****************/
+.banner-title{
+    position: relative;
+    margin-bottom:15px;
+}
+.btns{
+    position:absolute;
+    top:0;
+    right:0;
+    letter-spacing:2px;
+    font-size:1.2em;
+}
+.banner{
+    width:504px;
+    height:209px;
+    overflow:hidden;
+    position: relative;
+}
+.banner-in{
+    position: absolute;
+    top:0;
+    left:0;
+    width:2016px;
+    
+}
+.banner-in img{
+  width:504px;
+  float:left; /*이미지 바꿀 때 줄바꿈이 일어나지 않게*/
+}
+.btns i{
+    cursor:pointer;
+}
+.notice-service{
+    background: #ECF0F5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 30px 40px;
+    display: flex;
+    height: 143px;
+}
+.notice-service h1,
+.notice-service p{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.service-title{
+    width: 40%;
+}
+.service-title h1{
+    font-size: 2.2em;
+}
+.service-title p{
+    margin-top: 10px;
+    font-size: 2.1em;
+    color: #2F5BC1;
+}
+.service-time{
+    width: 60%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    letter-spacing: -1.8px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.service-time p{
+    margin-top: 10px;
+}
