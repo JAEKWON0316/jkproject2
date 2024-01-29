@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-5">
+          <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" 
+                data-bs-target="#slide" 
+                data-bs-slide-to="0" 
+                class="active"></button>
+        <button type="button" 
+                data-bs-target="#slide" 
+                data-bs-slide-to="1" ></button>     
+        <button type="button" 
+                data-bs-target="#slide" 
+                data-bs-slide-to="2" ></button>
+        <button type="button" 
+                data-bs-target="#slide" 
+                data-bs-slide-to="3" ></button>   
+    </div>
+      <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">갤러리</a></li>
+          <li class="breadcrumb-item"><a href="#">스포츠</a></li>
+          <li class="breadcrumb-item"><a href="#">골프</a></li>
+          <li class="breadcrumb-item active">홀인원 장면</li>
+      </ul>
+
+      <div id="slide" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="../images/shop/003.jpg" alt="003">
+              </div>
+              <div class="carousel-item">
+                  <img src="../images/shop/004.jpg" alt="004">
+              </div>
+              <div class="carousel-item">
+                  <img src="../images/shop/005.jpg" alt="005">
+              </div>
+              <div class="carousel-item">
+                  <img src="../images/shop/006.jpg" alt="006">
+              </div>
+          </div>
+
+          <!-- 좌우 버튼-->
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#slide" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#slide" data-bs-slide="next">
+             <span class="carousel-control-next-icon"></span>
+          </button>
+      </div>
+
+        <ul class="pagination"> <!--bootstrap page만들기-->
+            <li class="page-item disabled"><a href="#" class="page-link">prev</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item active"><a href="#" class="page-link">2</a></li>
+            <ii class="page-item"><a href="#" class="page-link">3</a></ii>
+            <li class="page-item"><a href="#" class="page-link">next</a></li>     
+        </ul>
+        
+        <ul class="list-group my-5">
+            <li class="list-group-item active">First Item</li>
+            <li class="list-group-item">Second Item</li>
+            <li class="list-group-item">Third Item</li>
+        </ul>
+        
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action disabled">First Item</a> <!--disabled 링크 안걸리게 하는법-->
+            <a href="#" class="list-group-item list-group-item-action">First Item</a>
+            <a href="#" class="list-group-item list-group-item-action">First Item</a>
+            <a href="#" class="list-group-item list-group-item-action">First Item</a>
+        </div>
+                <div class="list-group-item">
+                    <div class="row p-4">
+                        <div class="col-1">
+                            <img 
+                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                            class="img-fluid img-thumbnail rounded-circle">
+                            </div>
+                            <div class="col-10 md-10 col-8">
+                                <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                                <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                            </div>
+                            <div class="col-1">
+                                ♥
+                            </div>
+                    </div>
+            </div>
+            <div class="list-group-item">
+                <div class="row p-4">
+                    <div class="col-1">
+                        <img 
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        class="img-fluid img-thumbnail rounded-circle">
+                        </div>
+                        <div class="col-10 md-10 col-8">
+                            <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                            <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                        </div>
+                        <div class="col-1">
+                            ♥
+                        </div>
+                </div>
+        </div>
+        <div class="list-group-item">
+            <div class="row p-4">
+                <div class="col-1">
+                    <img 
+                    src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                    class="img-fluid img-thumbnail rounded-circle">
+                    </div>
+                    <div class="col-10 md-10 col-8">
+                        <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                        <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                    </div>
+                    <div class="col-1">
+                        ♥
+                    </div>
+            </div>
+    </div>
+    <div class="list-group-item">
+        <div class="row p-4">
+            <div class="col-1">
+                <img 
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                class="img-fluid img-thumbnail rounded-circle">
+                </div>
+                <div class="col-10 md-10 col-8">
+                    <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                    <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                </div>
+                <div class="col-1">
+                    ♥
+                </div>
+        </div>
+    </div>
+    <div class="list-group-item">
+        <div class="row p-4">
+            <div class="col-1">
+                <img 
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                class="img-fluid img-thumbnail rounded-circle">
+                </div>
+                <div class="col-10 md-10 col-8">
+                    <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                    <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                </div>
+                <div class="col-1">
+                    ♥
+                </div>
+        </div>
+    </div>
+    <div class="list-group-item">
+        <div class="row p-4">
+            <div class="col-1">
+                <img 
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                class="img-fluid img-thumbnail rounded-circle">
+                </div>
+                <div class="col-10 md-10 col-8">
+                    <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                    <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                </div>
+                <div class="col-1">
+                    ♥
+                </div>
+        </div>
+    </div>
+    <div class="list-group-item">
+        <div class="row p-4">
+            <div class="col-1">
+                <img 
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                class="img-fluid img-thumbnail rounded-circle">
+                </div>
+                <div class="col-10 md-10 col-8">
+                    <h1>이것은 제목 이랍니다.<span class="badge bg-danger">NEW</span></h1>
+                    <p>헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.</p>
+                </div>
+                <div class="col-1">
+                    ♥
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-primary text-white">
+                        <div class="card-header">
+                            Header
+                        </div>
+                        <div class="card-body">
+                            content
+                        </div>
+                        <div class="card-footer">
+                            footer
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/shop/082.jpg"/>
+                        <div class="card-body">
+                            <h3 class="card-title">조용한 사생활</h3>
+                            <p class="card-text">
+                                헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다.
+                            </p>
+                            <a href="#" class="btn btn-dark">더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>드롭다운</h1>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" 
+                            type="button"
+                            data-bs-toggle="dropdown">메뉴보기</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">소개</a></li>
+                        <li><a href="#" class="dropdown-item">상품</a></li>
+                        <li><a href="#" class="dropdown-item">상담</a></li>
+                        <li><a href="#" class="dropdown-item">커뮤니티</a></li>
+                        <li><a href="#" class="dropdown-item">연락</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1>Collapse</h1>
+                <h2 data-bs-toggle="collapse" data-bs-target="#test">국회 권한 보기</h2> <!--국회 권한 보기 collapse를 누르면 보였다 안보였다 toggle된다.-->
+                <p id="test" class=collapse>
+                    헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 
+                    모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 
+                    동일한 범죄에 대하여 거듭 처벌받지 아니한다.
+                    헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 
+                    모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 
+                    동일한 범죄에 대하여 거듭 처벌받지 아니한다.
+                    </p>
+                    <p>
+                    헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 
+                    모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 
+                    동일한 범죄에 대하여 거듭 처벌받지 아니한다.
+                    헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 
+                    모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 
+                    동일한 범죄에 대하여 거듭 처벌받지 아니한다.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h1>collapse를 이용한 아코디언 컨텐츠를 만드시오.</h1>
+                <button data-bs-toggle="collapse" data-bs-target="#test2">누르면 열려용~</button> <!--id를 타켓으로 만들어서 해준다.(data-bs-target == href)-->
+                <p id="test2" class="collapse">
+                    대통령은 취임에 즈음하여 다음의 선서를 한다. 
+                    각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 
+                    국가는 청원에 대하여 심사할 의무를 진다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 
+                    대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다. 
+                    모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 국무총리는 대통령을 보좌하며, 
+                    행정에 관하여 대통령의 명을 받아 행정각부를 통할한다. 헌법재판소에서 법률의 위헌결정, 
+                    탄핵의 결정, 정당해산의 결정 또는 헌법소원에 관한 인용결정을 할 때에는 재판관 6인 이상의 찬성이 있어야 한다.
+                </p>
+                <p>
+                    대통령은 취임에 즈음하여 다음의 선서를 한다. 
+                    각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 
+                    국가는 청원에 대하여 심사할 의무를 진다. 국무위원은 국정에 관하여 대통령을 보좌하며, 
+                    국무회의의 구성원으로서 국정을 심의한다. 
+                    대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 
+                    선전포고와 강화를 한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.
+                     국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다. 헌법재판소에서 법률의 위헌결정, 
+                     탄핵의 결정, 정당해산의 결정 또는 
+                     헌법소원에 관한 인용결정을 할 때에는 재판관 6인 이상의 찬성이 있어야 한다.
+                </p>
+            </div>
+        </div>
+     </div>     
+</div>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
