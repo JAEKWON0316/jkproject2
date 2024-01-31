@@ -1,0 +1,100 @@
+*{box-sizing: border-box;}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color:#222328;
+}
+a,a:link{
+    text-decoration:none;
+    color:#222328;
+}
+a:hover{
+    color:#52545e;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.container{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+}
+header{
+    height:100px;
+    display:flex;
+    justify-content: space-between;  /*header 안 양쪽에 logo 와 nav를 넣기위함*/
+    align-items: center;
+    background-color:pink;
+    padding-left:30px;
+    padding-right:30px;
+}
+nav{
+    width:700px;
+    
+}
+
+ul.gnb{
+    display:flex;
+    
+}
+ul.gnb>li{
+    position:relative;
+    width:25%;  /*부모태그 ul의 width를 따라간다*/
+}
+ul.gnb>li>a{  /*a태그는 인라인이지만 block을 줘서 text-align과 height, size등을 먹게한다.*/
+    display:block;
+    text-align:center;
+    line-height: 40px;
+    font-size:18px;
+    font-weight:bold;
+    transition: all 400ms; /*애니메이션에(hover,click..등등) 관해 모든걸 400밀리초로 시전한다*/
+ } 
+ ul.gnb>li:hover{
+     background:#52545e;
+ }
+ ul.gnb>li:hover>a{  /*a태그는 아래에있어서 hover가 안 먹는다 hover했을 때 a에게 라는 명령어를 직접 해줘야함*/
+     color:#fff;
+ }
+ ul.lnb{
+     width:100%;
+     position:absolute;
+     z-index:5;
+     background-color:rgb(255, 225, 230);
+     top:40px;
+     padding-top:20px;
+     padding-bottom:20px;
+     display:none;
+ }
+ ul.lnb>li{
+     width:100%;
+     padding:0 15px;
+ }
+ ul.lnb>li:hover{
+     background:#52545e;
+ }
+ ul.lnb>li:hover a{ /*a태그는 아래에있어서 hover가 안 먹는다 hover했을 때 a에게 라는 명령어를 직접 해줘야함*/
+     color:#fff;
+ }
+ ul.lnb>li>a{
+     display:block;
+     line-height:40px;
+     text-align:center;
+     font-size:18px;
+     font-weight:normal;
+     transition: all 400ms;
+ }
+ .hero{
+     height:300px;
+ }
+ .main{
+     height:200px;
+ }
+ footer{
+     height:100px;
+     background-color:#222328;
+ }
