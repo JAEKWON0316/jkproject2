@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id="strname"></p>
+    <script>
+    //5.임의의 문자열을 받으면 그 단어의 첫 글자를 대문자로 바꾸어 출력 
+    function capital_str(str) {
+        str = str.split(" ");
+        for(let i = 0; i < str.length; i++){
+            str[i] = str[i][0].toUpperCase() + str[i].substr(1);   //이중배열로 str 0번째배열의 0번째인자를 대문자로 바꾸고 뒤에 자리를 붙히고 str배열 0번째 인자에 대입  
+                                                                   //substr(1)은 1번째인자부터 잘라서 넣어준다,    
+        }
+        return str.join(" ");
+    }
+    document.getElementById("strname").innerHTML = capital_str("it agjaoier lavlarjtlwrm vaerofjalrv nqrhnlkfnv laaerlign")
+    </script>
+</body>
+</html>
