@@ -90,9 +90,63 @@ ul.gnb>li>a{  /*a태그는 인라인이지만 block을 줘서 text-align과 heig
  }
  .hero{
      height:300px;
+     overflow:hidden; /*실제로는 이미지3개가 세로로 붙어있지만 부모박스에 overflow를 줘서 1개만 보이게한다.*/
+     position:relative;
+ }
+ .heroin{
+    width:1200px;
+    height:900px;
+    position:absolute;
+    top: 0;
+    left:0;
+ }
+ .heroin img{
+    float:left;
  }
  .main{
      height:200px;
+     display:flex;
+ }
+ .tabsbox{
+    width:36%;
+    height:200px;
+    padding-right:10px;
+ }
+ .banner,.quick{
+    width:32%;
+    height:200px;
+ }
+ .banner{
+    background-color:rgba(255, 255, 230, 0.2);
+ }
+ .quick{
+    background-color:rgba(255, 255, 230, 0.2);
+ }
+ .tabnav{
+    margin-top:10px;
+    display:flex;
+ }
+ .tabnav li{
+    background-color:#b9bbc7;
+    padding:8px 20px;
+ }
+ .tabnav li a{
+    color:#7a7c88;
+ }
+ .tabnav li.active{
+    background-color:rgba(255, 255, 230);
+ }
+ .tabnav li.active a{
+    color:#222328;
+    font-weight:bold;
+ }
+ .tab{
+    background-color:rgba(255, 255, 230);
+    padding:15px 20px;
+    display:none;
+ }
+ .tab.active{
+    display:block; /*active가 있는 notice클래스만*/
  }
  footer{
      height:100px;
