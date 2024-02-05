@@ -1,0 +1,31 @@
+
+문자열을 다른 타입값으로 변경할때는 변수타입 변수명 = 변수타입.parse변수타입(변수);
+
+String str = "10";
+byte val1 = Byte.parseByte(str); //byte로 받는법.
+short val2 = Short.parseShort(str);
+
+기본 타입의 값을 문자열로 변경할 때는 String.valueOf() 메소드를 이용.
+숫자 ==> 문자
+String val = String.valueOf(val2);
+
+System.out.println(변수 또는 리터럴);
+
+System ==> 시스템으로
+out ==> 출력하는데
+print ==> 괄호안의 내용을 인새하라. 
+ln ==> 줄바꿈.
+printf("형식문자열", 값1, 값2 ...)
+          문자열 안에 %s와 %d를 넣어줘서 그다음 값으로 받는다.
+          %s 문자열 %d 숫자형
+
+숫자열이 같은 지 조사할 때 a == b
+문자열이 같은 지 조사할 때 a.equals("b");  
+
+javac.exe --> 자바 컴파일 .java .class 만들어줌 ,,jdk에만 들어있음(개발자버전)
+
+java.exe --> 컴파일 된 java를 실행시켜줌 (구동) ,,jre(jvm)에 들어있음(자바런타임, 사용자는 javac가 필요없다).
+
+즉 ,, 소스 작성후 컴파일 후 jvm 구동 후 main()블록 실행
+
+*******자바는 변수가 스코프단위로만 쓸 수 있어서 스코프를 벗어나면 에러 난다!!!********

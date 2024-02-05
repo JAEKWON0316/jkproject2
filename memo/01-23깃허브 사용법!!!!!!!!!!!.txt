@@ -1,0 +1,9 @@
+git add. (저장)
+git commit -m "커밋명"
+git switch -c "브랜치명"  ==>브랜치 생성과 동시에 이동
+git switch "브랜치명" ==> 브랜치로 동
+
+//git hub 등록
+git push만 써주면 됨 // 등록전에는 git push origin main, git push -u origin
+
+git push origin 브랜치명 ==> 그 브랜치명으로 파일 등록된다.

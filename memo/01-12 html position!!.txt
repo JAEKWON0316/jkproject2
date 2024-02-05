@@ -1,0 +1,18 @@
+
+ttf (TrueType Fonts) : 윈도우,맥OS용 글꼴 , 원본이랑 가까움(용랑이 크다.)
+otf (OpenType Fonts): MS에서 만듦, 주요 컴퓨터 플랫폼에서 ttf와 함께 사용됨.
+woff (웹 오픈 글꼴): 웹 페이지에서 사용되는 글꼴, 웹표준 권장 타입
+woff2.0  -woff보다 압축률이 좋음
+svg (Edge,Chrome,firefox 는 사용X)
+eot -- 예전에 ms explorer에서 사용하는 글꼴 (Chrome,sfari,firefox,opera 사용 X)
+
+webfont generator 에서 형식을 바꿔줘야함!
+
+
+--------------------------------------------------------------------------------------
+position: fixed나 position:absolute를 가운데 정렬 하는 두 가지 방법
+
+1.left: calc(50% - 박스의 1/2px);
+
+2.left:50%;
+   transfrom:translate(-50%);

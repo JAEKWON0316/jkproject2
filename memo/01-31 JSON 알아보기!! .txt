@@ -1,0 +1,21 @@
+
+JSON이란??
+JSON은 데이터를 저장하고 전송하기 위한 텍스트 형식.
+XML타입을 오브젝트 타입으로 만든것 (전체를 싸주고 오브젝트 하나하나 다 싸준다!)
+				{중괄호} ==>오브젝트 , [대괄호] ==> 배열
+JSON.parse()  ==> javascript 오브젝트 개체로 변환
+JSON.stringify() ==> 문자열로 바꾸는법
+
+
+XML EX)				JSON EX)
+<title>				const member = "{' name': '홍길동', 'age':50, 'area':"김포시"}"
+홍길동				member.name; ==>홍길동 출력
+</title>
+<member>
+ 	<name>
+		홍길동
+	</name>
+	<age>
+		12
+	</age>
+</member>

@@ -1,0 +1,29 @@
+변수 a=10 b=20 m=30 n=40 이라고 할 때
+
+1. a가 b보다 크거나 b가 m보다 크거나 같거나 m이 n보다 크다.
+   의 식을 만들고 true, false를 판별하라.
+
+2. a가 b보다 작거나 같고 b는 m보다 크거나 같으며 동시에 m이 n보다 작거나 같다.
+   의 식을 만들고 true,false를 판별하라.
+
+3. a가 b보다 작거나 또는 m이 n보다 크다.가 참이면
+   console 창에 '참'으로 거짓이면 '거짓'으로 표기하라.
+
+4. a는 8보다 크고 15보다 작다.를 표기하고 true, false를 판별하라.
+
+html script 순서: window > document > location > href
+
+swicth(선택문)
+
+while(반복문)   while(조건식){
+                    증감식;
+                    }
+
+a= 1;
+
+while(a<10) {        //a가 10보다 작을 때 까지 루프
+console.log(a);
+a++;
+}
+
+

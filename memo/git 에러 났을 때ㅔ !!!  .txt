@@ -1,0 +1,15 @@
+1. main브랜치의 프로젝트를 원격저장소 origin으로 보냄
+  git push -u origin main
+
+2. 만약 error:failed to push some refs to
+   'https://github.com/musecom2/weddingWeb.git" 발생할 경우
+   git pull origin main
+
+3. git pull origin main 에서
+   fatal: refusing to merge unrelated histories 발생
+   (두 저장소에 존재하는 히스토리가 다르다.)
+
+4. git pull origin main --allow-unrelated-histories
+
+5. git push origin
+

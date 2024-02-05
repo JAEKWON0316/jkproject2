@@ -1,0 +1,26 @@
+HTML 폼 형태
+
+input type="text"
+input type="password"
+
+input type="button"
+input type="submit"
+input type="reset"
+
+button type="button"
+
+selcet > option 선택
+input typ="radio" 선택
+input type="checkbox" true - false
+input type="file"
+
+textarea 본문을 쓸 때
+
+
+html에서 id와 #을 해주면 id 저장된곳으로 가고
+           class와 .을 해주면 class가 저장된곳으로 간다.
+
+
+1부터 20까지를 출력하되 
+홀수는 파랑색 
+짝수는 빨강색으로 출력하라.

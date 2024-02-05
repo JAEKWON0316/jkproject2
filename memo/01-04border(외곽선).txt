@@ -1,0 +1,26 @@
+rgb ==> 빛의 3요소 r+g+b ==> 흰색
+cmy ==> 색의 3요소 c+m+y ==> 검정
+
+10진수
+00000000 ==> 0 0 0 ==> 검정 rgb(0, 0, 0);
+11111111 ==> 255 255 255 ==> 흰색 rgb(255, 255 ,255);
+
+16진수
+00 00 00 ==> 검정 #000000 #000
+ff ff ff ==> 흰색 #ffffff #fff
+
+색이 3원색 ==> 색상, 체도, 명도
+//hsl(20, 100%, 23%);
+
+black, pink, red, blue 직접 색을 지정 
+
+
+외곽선(border) 3가지
+
+-굵기(border-width: 1px;) 
+-상태(border-stytle: solid 실선, dotted 점, dashed 점선) 
+-컬러(border-color:컬러값)
+
+4개: top / right / bottom / left  순서
+3개: top / left,right / bottom 순서
+2개: top, bottom / right,left 순서

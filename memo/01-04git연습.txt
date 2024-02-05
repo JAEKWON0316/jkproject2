@@ -1,0 +1,39 @@
+
+GIT최초 설정
+
+확인 (이름 ,이메일 등록)
+Git config --global user.name“본인이름” 
+
+Git config —global user.emial“본인이메일” 
+
+기본 브랜치명 설정
+Git config --global init.defaultBranch main
+
+* git init (git으로 폴더를 관리하겠다)
+  git status (상황확인)
+  #Fatal:detected dubious ownership.. 에러가 출력되면
+   git config --global --add safe.directory "디렉토리명"
+
+   git branch
+   git add "파일명" (파일 하나 등록)
+   git add . (폴더내의 모든 파일을 등록) 
+   git commit (등록)
+   git commit -m "커밋내용" (바로 등록)
+   git log 
+
+  입력시작: i 명령어 입력모드에서 텍스트 입력모드로 전환
+  입력종료: esc 텍스트 입력모드로 전환
+  저장없이 종료: :q
+  저장없이 강제: :q!
+  저장하고 종료: :wq
+  위로스크롤: k
+  아래로스크롤: j
+
+  git으로 관리하지 않는 파일 
+  .gitignore로 하면됨
+
+  gitignore 사용법
+  최상위 폴더: /파일이름.확장자
+  확장자가 .exe 모든파일: *.exe
+  특별히 지정할 파일: 파일이름.확장자
+  

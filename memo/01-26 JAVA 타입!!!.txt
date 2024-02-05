@@ -1,0 +1,17 @@
+
+-작은 타입에서 큰 타입으로 ==> 자동타입변환
+
+byte --> int   int --> double 
+EX) byte val = 10; , int intVal = val ==> byte타입이 int 타입으로 자동타입변환
+EX) char charVal ='A'; , int intVal = charVal; ==> char타입이 int 타입으로 자동타입변환
+                                                           char는 정수형이고 2byte이기 때문
+EX) byte 타입에서 char타입은 안된다 ==> char타입은 - 값이 없기때문에.
+
+
+자동타입변환: Promotion  ==> 
+
+
+강제타입변환: Casting  큰타입을 작은타입으로 쪼개서 변환하는법
+                                       대신 변환할 때 ( ) 괄호안에 타입을 써줘야한다.
+ 
+

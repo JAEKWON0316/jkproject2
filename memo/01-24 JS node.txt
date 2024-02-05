@@ -1,0 +1,32 @@
+javascript 에서 dom 탐색
+
+-네 가지 노드정도를 기억하자
+  1.문서 노드(Document Node)
+  2.요소 노드(Element Node)
+  3.어트리뷰트 노드(Attribute Node)
+  4. 텍스트 노드(Text Node)
+
+-dom query 
+  1. id 선택 = document.getElementById
+  2. 셀렉터로 선택 = document.querySelector
+  3. class 선택 = document.getElementsByClassName (이건 Elements임 배열로 가져와짐)
+  4. 태그네임(p,div..등등) 선택자 = document.getElemetsByTagName (이건 Elements임 배열로 가지고와짐 그래서 elements 복수형)
+  5. document.querySelectorAll
+
+-부모노드 parentNode (자식은 바로아래에 있는 것들, 자손은 그 하위 자식들까지 전부 포함)
+EX)
+parent() = 내 직계 부모
+parents() = 내 모든 부모(부모의 부모 할머니 할아버지 증조할머니 등 .. 다)
+parentsUntil() = 어디 부모~ 어디부모 이전 까지
+
+-자식노드 
+children(하위 자식들 전부) find(그 자손만)
+firstChild(첫번째 자식), lastChild(마지막 자식) 
+
+-형제노드 
+siblings() = 이웃형제 같은위치
+next() = 나 바로다음
+nextAll() = 나 바로다음 모두
+prev() = 나 전에
+prevAll() = 나 전에 모두
+preveUntil() = 나 전부터 ~ 어디전까지

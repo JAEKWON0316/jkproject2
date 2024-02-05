@@ -1,0 +1,40 @@
+
+1. git branch main2 => main2 제작
+
+2. git branch => 현재 branch 목록을 확인
+*main => 현재 위치한 브런치
+main2
+
+3. git  checkout main2 (main2로 브랜치 전환)
+git check out 공간 => 그 공간으로 이동
+(main으로 다시 돌아갈 시 git check out -m main)
+                             or switched to branch main)
+4.git add . 
+  git commit -m "메세지"
+
+5. git status => 현재상황 확인
+6. git log
+
+vim 경로명/파일명 
+
+----------git 연습-----------------
+1. girlsday에 지선 추가
+   커밋메세지: Add 지선 to girlsday 
+    git commit -am => 파일 추가 삭제 없이 수정만 있을 시 가능.
+
+2. b1a4.txt 추가
+  팀명 : B1A4
+  팀장 : 신우
+  팀원 : 신우, 산들, 공찬
+  커밋메세지 : Add boygroup B1A4
+
+3. b1a4 삭제
+   girlsday 지선, 지인, 지혜 추가
+   커밋메세지 : remove b1a4 add members to girlsday
+---------------------------------------------------
+
+되돌리는 2가지 방법
+
+*Reset : 원하시는 시점으로 돌아가고 다 날라감 
+
+*Revert : 되돌리기 원하는 시점의 커밋을 거꾸로 실행한다.

@@ -1,0 +1,25 @@
+숫자형 비교법
+'A' == 65 ===> true (char도 숫자형이기 때문에)
+3 == 3.0 ===> true
+
+실수
+0.1f == 0.1 ===> false  
+(자바에선 실수형 기본타입은 double 즉,float와 double은 가수와 지수 차이가 있어서 flase가 나온다.)
+따라서 == 하기 전에 미리 강저 타입변환을 해서 모두 float이 되게 맞춰줘라
+0.1f == (float) 0.1 ===> true 
+
+
+문자열 비교법 equlas()와 !equals()를 사용
+
+a.equals(b); ==> a == b
+
+
+&&                                       &
+A && B ===> A false ---> false   A & B ===> A false ---> B true false ==> false
+
+
+ ||                                          |
+
+이 두개의 차이 두번쓴거는 앞에것이 true,false가 나오면 뒤에 안보고 바로 출력
+하지만 한개만 쓰면 앞에가 true,false나와도 뒤에까지 다 연산해보고 출력해준다.
+즉, 두개를 쓰는데 연산에 더 빠르다 !! 

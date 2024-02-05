@@ -1,0 +1,57 @@
+명령어       사용법                           비고
+
+cd            cd+경로                         디렉토리 이동 명령 // 현재 디렉토리 표시
+
+dir(is)        dir(is)                            디렉토리 목록 표시
+
+copy         copy 원본파일 대상위치      파일복사
+
+move        move 원본파일 대상위치     파일이동 // 이름변경(rename)
+
+mkdir        mkdir 폴더이름                폴더생성
+
+rmdir        rmdir /s /q 폴더이름          폴더 및 파일 삭제(rm 또는 rd)
+
+type         Type 파일이름                  파일 상태 보기
+
+ipconfig     ipconfig                         IP 구성 정보 확인
+
+hostname   hostname                       호스트이름 확인
+
+find          Find "문자열" 파일이름        파일검색
+
+help         help                              도움말 보기
+
+----------------------------------------------------------------------------------------------------------------------
+
+h1~h6 제목
+p 문단
+pre
+br
+hr
+a href="링크주소"
+특수문자 : escape
+             문자표현      숫자표현
+띄어쓰기  &nbsp;        &#160;
+엠퍼센트  &amp;         &#38;
+<           &lt;             &#60;
+=            =              &#61;
+>           &gt;            &#62;
+copyright &copy;        &#169;
+
+
+strong ->  글자를 강조
+em     ->  글자를 강조
+small   -> 작은 텍스트
+
+-em.strong 요소는 문구를 강조할 때 사용
+-em은 주관적 강조, stron은 객관적 강조로 사용할 때가 많다.
+-q, blockquote 요소는 인용을 나타냄
+-q는 인라인 요소, blockquote는 블럭요소 
+-cite는 요소일 때는 작품의 명칭, q나 blockquote의 속성일 때는 출처가
+ 되는 URL을 명시
+-ins는 추가, del은 삭제를 의미하는 요소
+-ins와 del은 부모요소의 형태에 따라 인라인이 될 수도 블럭이 될 수도 있다.
+-sub는 아래첨자, sup는 위첨자 텍스트
+-mark는 표시된 텍스트(형광색)
+-abbr은 약어를 정의 title 속성으로 전체 제목을 지정

@@ -1,0 +1,4 @@
+
+global navigation  = 주메뉴(상단에 있는 메뉴들)
+local navigation = 지역메뉴 (ex_주메뉴를 누르면 나오는 메뉴들)
+breadcrumb navigation = 메뉴까지 가는 경로를 설명해주는 것

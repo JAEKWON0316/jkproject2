@@ -1,0 +1,18 @@
+
+display:flex
+----부모태그가 갖는 것들---------
+justify-content ==> flex안 항목(전체)을 어디에 정렬하는지, 전체에 대한 비율
+align-items ==> flex안 항목(하나 하나씩)을 어디에 정렬하는지, 전체X하나하나씩 
+flex-direction ==> flex안 항목을 쌓을 방향
+flex-wrap ==> flex안 항목 줄바꿈 유무
+flex-flow ==> direction+wrap
+align-content
+
+-------자식태그가 갖는 것들--------
+order ==> order에 붙혀준 숫자가 순서(해준 숫자 순서대로 나온다)
+flex-grow  각 지정한 비율만큼 늘어남
+flex-shrink 각 지정한 비율만큼 줄어듦
+flex-basis width갑 하고 똑같음
+flex(축약) ==> flex(grow,shrink,basis)
+ex) .col{ flex: 0 0 300px; } => grow 안주고 shrink 안주고 width값만 300px로 잡는다
+align-self : 자식태그에 넣어주면 그 박스만 따로 정렬 시킬 수 있다1

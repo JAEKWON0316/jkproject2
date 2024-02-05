@@ -1,0 +1,15 @@
+HTML Semantic 태그 (div로 나옴 div를 안해도 스타일 적용가능, 구역마다 나뉘어져있음)
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>

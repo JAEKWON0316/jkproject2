@@ -1,0 +1,24 @@
+Java SE 기본에디션
+java standard Edition
+-JVM
+-구현체 : JDK (java development kit) = KRE + 개발도구
+-JRE(java Runtime Environmnet) = JVM + 표준 클래스 라이브러리
+
+Java EE - 서버 애플리케이션 개발 에디션
+-웹 애플리케이션, 웹 서비스
+-구현체 WAS(web application server)
+
+Java MM (Micro Edition)
+-임베디드, 모바일
+
+java 8
+java 11 --> spring 지원
+java 17
+
+https://jdk.java.net 
+https://adoptium.net
+https://www.oracle.com/java/technologies/downloads
+
+시작프로그램 -> 마우스오른쪽 버튼 -> 시스템 -> 고급시스템 설정 -> 환경변수
+시스템변수 -> 새로만들기 -> java있는 파일명까지의 주소를 변수값으로 쓰기
+사용자변수 => path => 편집 =>  %변수이름%(%JAVA_HOME%)\bin 

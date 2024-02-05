@@ -1,0 +1,35 @@
+javascript - 웹에서 코딩을 하면 실시간(컴파일)으로 확인
+
+-- html, css, javascript
+
+-- node.js
+
+java - 코딩후 컴파일을 하는 과정이 따로필요
+
+------------------------------------------------
+CMD(명령 프롬포트)
+
+-이동명령 : cd + 위치
+-시스템정보 확인 : systeminfo 
+-레지스트리 편집기 실행 : regedit
+-네트워크 상태 확인 : netstat -na
+
+- dir(리렉토리 내용물 확인) (리눅스에선 : ls)
+- copy(파일복사) copy 원본이름 새로복사할이름
+- move(파일이동 or 이름변경)
+- del(파일삭제) (리눅스에선 rm or remove)
+- mkdir(폴더생성) mkdir 폴더이름
+- rmdir(폴더삭제) rmdir 폴더이름
+- type(파일 상태보기)
+- ipconfig(내 아이피 주소)
+
+* 윈도우에서 포트를 강제로 삭제하는 법
+- netstat -a -o (pid번호 확인)
+
+- pid 번호를 확인 후 
+
+- taskkill /f /pid 번호
+
+---------------------------------------
+Android (meterial develope)
+aplle ( IOS develope)

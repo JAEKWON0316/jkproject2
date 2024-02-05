@@ -1,0 +1,43 @@
+transform (x축, y축, z축)
+  translate(x,y,x) -> translateX() , ... 이동
+  rotate(x,y,z)  -> rotateX() , ... 회전
+  scale(x,y) -> scaleX(), ... 크기 (단위는 (배수));
+  skew(x,y) -> skewX(), ... 각도
+  matrix(크기X, 각도Y, 각도X, 크기 Y, 이동X, 이동Y);
+
+transition
+  transition-delay : 언제부터 시작 할 것인가?
+  transition-duration : 어느 시간동안 진행 할 것인가?
+  transition-property : 무엇을 애니메이션 할 것인가?
+  transition-timing-function : 어느 타이밍으로 애니메이션 할 것인가?
+
+transform, transition을 잘 사용하면 애니메이션을 부드럽게 만들 수 있다!!!!!
+
+--형상관리 --> git -> github -> html .md
+
+-- ncs >> 요구사항확인, 화면설계 --> UML
+
+UML ==> unified modeling language
+
+한빛미디어-UML 기초와 응용 교재 이용
+
+
+객체 지향 언어 ex)
+  사람 --->                사람 class {   //필드타입
+     ->이름                  사람
+     ->성별                  성별
+     ->머리색               머리색
+     ->나이                  나이
+                                                //메소드
+     ->걸어간다            걸어간다
+     ->밥먹는다            밥먹는다
+     ->화를낸다            화를낸다
+                              }
+
+
+클래스 붕어빵틀
+-붕어빵 속(잼, 팥), 밀가루
+-붕어빵을 만든다.
+
+붕어빵 = new 붕어빵틀(잼, 밀가루)
+붕어빵.붕어빵을 만든다.

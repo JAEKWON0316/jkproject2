@@ -1,0 +1,16 @@
+피그마
+
+Gutter = 컬럼 당 여백
+Margin = 양 끝 여백
+
+portFolio works skill notes
+
+투명으로 겹쳐서 보이게 하려면 png 써야함
+
+brandfetch(기업들 로고 찾을 때)
+
+romove bg (배경 지워줌)
+
+unsplash(무료 이미지)
+
+unsplash avartars(무료 인물 이미지)
