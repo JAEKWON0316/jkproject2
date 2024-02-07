@@ -9,54 +9,113 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <p class="logotext">JUST</p>
-            </div>
-            <nav class="global">
-                <ul class="mainnav">
-                    <li>탑
-                        <ul class="submenu">
-                            <li class="bl">블라우스</li>
-                            <li class="bl">티</li>
-                            <li class="bl">셔츠</li>
-                            <li class="bl bb">니트</li>
+    <div class="container">
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">탑</a>
+                    <ul class="lnb">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="lnb">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
                         </ul>
-                    </li>
-                    <li>아우터
-                        <ul class="submenu">
-                            <li>자켓</li>
-                            <li>코트</li>
-                            <li>가디건</li>
-                            <li class="bb">머플러</li>
+                    </li></li>
+                    <li><a href="#">팬츠</a>
+                        <ul class="lnb">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
                         </ul>
-                    </li>
-                    <li>팬츠
-                        <ul class="submenu">
-                            <li>청바지</li>
-                            <li>짧은바지</li>
-                            <li>긴바지</li>
-                            <li class="bb">레깅스</li>
+                    </li></li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="lnb">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
                         </ul>
-                    </li>
-                    <li>악세사리
-                        <ul class="submenu">
-                            <li class="br">귀고리</li>
-                            <li class="br">목걸이</li>
-                            <li class="br">반지</li>
-                            <li class="bb br">팔찌</li>
-                        </ul>
-                    </li>
+                    </li></li>
+                </ul>
+                <ul class="gnb">
+                    <li></li>
                 </ul>
             </nav>
+        </header>
+        <div class="hero">
+            <div class="heroin">
+                <img src="images/banner01.jpg" alt="banner01">
+                <img src="images/banner02.jpg" alt="banner02">
+                <img src="images/banner03.jpg" alt="banner03">
+            </div>
         </div>
-    </header>
-
-
-
-    <footer>
-
-    </footer>
+        <div class="main">
+            <div class="tabsbox">
+                <ul class="tabnav">
+                    <li class="active"><a href="#notice">공지사항</a></li>
+                    <li><a href="#gallery">갤러리</a></li>
+                </ul>
+                <div class="tabbox">
+                    <div class="tab active" id="notice">
+                        <ul>
+                            <li><a href="#" class="pop">라이온 브랜드위크 이벤트 당첨자</a></li>
+                            <li><a href="#">신상품이 입고 되었습니다.</a></li>
+                            <li><a href="#">화제의 신상품이 다음주 입고를 기다립니다.</a></li>
+                            <li><a href="#">이번 라이온 브랜드위크 이벤트는 15일 진행됩니다.</a></li>
+                            <li><a href="#">BC카드 무이자 이벤트 당첨자를 발표 합니다.</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab" id="gallery">
+                        <div class="col">
+                            <a href="#"><img src="images/content1.jpg" alt="001"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="images/content2.jpg" alt="002"></a> 
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="images/content3.jpg" alt="003"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="images/middle01.jpg" alt="md01">
+                <img src="images/middle02.jpg" alt="md02">
+                <img src="images/middle03.jpg" alt="md03">
+            </div>
+            <div class="quick">
+                <img src="images/quick3.jpg" alt="q03">
+            </div>
+        </div>
+        <footer>
+            <div class="logo-box">
+            <a href="#" class="logo2"><img src="images/logob.png" alt="logo"></a>
+             </div>
+             <div class="copy-box">
+                <p class="copy">Copyright &copy; jack's all right reserved. maked 2024.</p>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="images/sns01.jpg" alt="s01"></a>
+                <a href="#"><img src="images/sns02.jpg" alt="s02"></a>
+                <a href="#"><img src="images/sns3.jpg" alt="s03"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="popup">
+        <h3>라이온 브랜드위크 이벤트 당첨자  </h3>
+        <p>이번 라이온 브랜드위크 이벤트 당첨자를 발표 합니다.
+            안철수, 노태우, 전두환, 이승만</p>
+        <button type="button" class="close">닫기</button>
+    </div>
 </body>
 </html>
