@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <script src="../js/jquery.min.js"></script> <!-- 제일 위에 있어야함!! -->
+    <script src="js/script2.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <h2>반응형 회원가입폼</h2>
+            <p>800px를 기준으로 반응하는 회원가입폼을 작성하세요.</p>
+            <div class="row">
+                <div class="col-md-9 row">
+                    <div class="col-md-6">
+                        <h3>Billing Address</h3>
+                            <form action="/jkproject.php">
+                                <div class="form-group">
+                                <label for="name">이름</label>
+                                <input type="text" class="form-control" id="name" placeholder="JaeKwon Lee" name="name">
+                                </div>
+                                <div class="form-group">
+                                <label for="email">이메일</label>
+                                <input type="email" class="form-control" id="email" placeholder="diwo02@naver.com" name="email">
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="area">시, 도</label>
+                                        <input type="text" class="form-control" id="area" placeholder="NY" name="area">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="post">우편번호</label>
+                                        <input type="text" class="form-control" id="post" placeholder="10001" name="post">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">주소</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Kimpo" name="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="number">전화번호</label>
+                                    <input type="text" class="form-control" id="number" placeholder="000 0000 0000" name="number">
+                                </div>
+                            </div>
+                                <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Shipping address same as billing
+                                </label>
+                                </div>
+                                <button type="submit" class="btn btn-success">Continue to checkout</button>
+                            </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Payment</h3>
+                            <form action="/jkproject.php">
+                                <div class="form-group">
+                                <label for="name">카드</label>
+                                <input type="text" class="form-control" id="name" placeholder="JaeKwon Lee" name="name">
+                                </div>
+                                <div class="form-group">
+                                <label for="card-menu">카드종류</label>
+                                <input type="text" class="form-control" id="card-menu" placeholder="JK more Lee" name="card-menu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-num">카드번호</label>
+                                    <input type="text" class="form-control" id="card-num" placeholder="1111-2222-3333-4444" name="card-num">
+                                </div>
+                                <div class="form-group">
+                                    <label for="month">Exp Month</label>
+                                    <input type="text" class="form-control" id="month"" placeholder="September" name="month">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="year">Exp Year</label>
+                                            <input type="text" class="form-control" id="year" placeholder="2024" name="year">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" placeholder="352" name="cvv">
+                                        </div>
+                                    </div>
+                            </div>
+                                <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Shipping address same as billing
+                                </label>
+                                </div>
+                                <button type="submit" class="btn btn-success">Continue to checkout</button>
+                            </form>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                   <div>
+                    <p>cart<span>4</span></p> 
+                   </div>
+                   <div>
+                    <p><a href="#">product 1</a><span>$15</span></p>
+                   </div>
+                   <div>
+                    <p><a href="#">product 2</a><span>$5</span></p>
+                   </div>
+                   <div>
+                    <p><a href="#">product 3</a><span>$8</span></p>
+                   </div>
+                   <div>
+                    <p><a href="#">product 4</a><span>$2</span></p>
+                   </div>
+                   <div class="br-t">
+                    <p class="total-p">total<span>$30</span></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
