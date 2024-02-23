@@ -1,0 +1,112 @@
+*{ box-sizing:border-box;}
+body{
+    font-size:16px;
+    color:#333333;
+    background-color:  #ffffff; /*기본 흰색 생략가능*/
+    font-family: sans-serif;
+}
+
+a, a:link{ /*링크 밑줄삭제*/
+    text-decoration: none;
+    color:#333333;
+}
+a:hover{
+    color:#000000;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.container{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+header{
+    height:100px;
+    background-color: #3cb149;
+    padding-left:20px;
+    padding-right:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+nav{
+    width: 55%;
+}
+.gnb,.lnb{
+    display:flex;
+    height:40px;
+    margin-top:60px;
+}
+.gnb li, .lnb li{
+    width:25%;
+    text-align:center;
+    line-height:40px;
+}
+.gnb li a, .lnb li a{
+    display:block;
+}
+.gnb li{
+    border-top: 1px solid #434748;
+    border-left: 1px solid #434748;
+    border-bottom:1px solid #434748;
+    transition: all 400ms;
+}
+.gnb li:hover{
+    background-color:#434748;
+}
+.gnb li a:hover{
+    background-color:#434748;
+    color:#fff;
+}
+.gnb li:last-child{
+    border-right:1px solid #434748;
+}
+.lnbbox{
+    position:absolute;
+    background:#434748;
+    width:100%;
+    height:150px;
+    left:0;
+    display:none;
+}
+.lnb{
+    margin-top:0;
+    padding-top:15px;
+    width:55%;
+    float:right;
+}
+.lnb a{
+    color:#fff;
+}
+.lnb a:hover{
+    background-color:#3cb149;
+    color:#434748;
+}
+.slide{
+    height:300px;
+    overflow:hidden;
+    position:relative; /*박스 기본틀에 relative를 주고*/
+}
+.slidein{
+    width:3600px;
+    height:300px;
+    position:absolute; /*이미지가 바뀔 박스에 absoulute를 줘서 이미지가 넘어가는걸 보이게 한다*/
+   
+}
+.slidein img{
+    float:left;
+
+}
+.main{
+    height:200px;
+}
+footer{
+    height:100px;
+    background-color:#434748;
+    color:#fff;
+}
