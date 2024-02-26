@@ -1,8 +1,8 @@
 $(function(){
-    $('.gnb').hover(function(){
-        $('.lnb').toggle();
-        $('.lnb-box').toggle();
-    });
+    // $('.gnb').hover(function(){
+    //     $('.lnb').toggle();
+    //     $('.lnb-box').toggle();
+    // });
 
     setInterval(slideUpDown, 3000); 
 

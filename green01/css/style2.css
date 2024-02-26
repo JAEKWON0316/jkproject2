@@ -37,48 +37,56 @@ header{
 nav{
     width: 55%;
 }
-.gnb,.lnb{
+.gnb{
     display:flex;
     height:40px;
     margin-top:60px;
 }
-.gnb li, .lnb li{
-    width:25%;
+.lnb li{
     text-align:center;
     line-height:40px;
+}
+.lnb{
+    position:relative;
+    z-index:10;
+    display:none;
+    margin-top:0;
+    padding-top:15px;
+    width:100%;
 }
 .gnb li a, .lnb li a{
     display:block;
 }
-.gnb li{
+.gnb>li{
     border-top: 1px solid #434748;
     border-left: 1px solid #434748;
     border-bottom:1px solid #434748;
+    width:25%;
+    text-align:center;
+    line-height:40px;
     transition: all 400ms;
 }
-.gnb li:hover{
+.lnb>li{
+    border-bottom:1px dashed #8b9294;
+    transition: all 400ms;
+}
+.gnb>li:hover{
     background-color:#434748;
 }
-.gnb li a:hover{
-    background-color:#434748;
+.gnb>li:hover>a{
     color:#fff;
 }
-.gnb li:last-child{
+.gnb>li:last-child{
     border-right:1px solid #434748;
 }
 .lnbbox{
-    position:absolute;
+    position:absolute; /*lnb의 위치값을 기준으로 !!*/
     background:#434748;
     width:100%;
     height:150px;
     left:0;
     display:none;
-}
-.lnb{
-    margin-top:0;
-    padding-top:15px;
-    width:55%;
-    float:right;
+    z-index:2;
 }
 .lnb a{
     color:#fff;
@@ -95,8 +103,10 @@ nav{
 .slidein{
     width:3600px;
     height:300px;
+    left:0;
+    top:0;
     position:absolute; /*이미지가 바뀔 박스에 absoulute를 줘서 이미지가 넘어가는걸 보이게 한다*/
-   
+    z-index:0;
 }
 .slidein img{
     float:left;
@@ -104,9 +114,110 @@ nav{
 }
 .main{
     height:200px;
+    display:flex;
+}
+.notice{
+    width:35%;
+    padding-right:20px;
+}
+ul.ns>li{
+    border-bottom:1px dashed #8b9294;
+}
+ul.ns>li:hover{
+    background-color:#dae9e3;
+}
+ul.ns>li>a{
+    display:inline-block;
+    width:calc(100% - 100px);
+    white-space: nowrap; /*줄바꿈 금지*/
+    overflow:hidden;
+    text-overflow:ellipsis; /*텍스트 넘치는것 ...으로 표시*/
+}
+span.date{
+    float:right;
+    display:inline-block;
+    width:100px;
+    text-align:right;
+
+}
+.gallery{
+    width:35%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    padding-left:20px;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.fake-banner{
+    width:100%;
+    height:45px;
+    background:pink;
+}
+.gallery img{
+    width:130px;
+    height:150px;
+    object-fit: cover;
+    border:1px solid #8b9294;
 }
 footer{
     height:100px;
     background-color:#434748;
     color:#fff;
+    display:flex;
 }
+.blogo, .family{
+    width:250px;
+}
+.blogo{
+    padding-top:30px;
+    padding-left:20px;
+}
+.family{
+    padding-top:30px;
+    text-align:right;
+    padding-right:20px;
+}
+.myfamily{
+    padding:5px 15px;
+    font-size:16px;
+}
+.copyright{
+    width:700px;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop{
+    position:fixed;
+    width:500px;
+    height:300px;
+    top:200px;
+    left:calc(50% - 250px);
+    z-index:100;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2);
+    padding:30px;
+    display:none;
+}
+.pop h1{
+    font-size: 25px;
+}
+.close{
+    position:absolute;
+    bottom:30px;
+    left:50%;
+    transform: translateX(-50%); /*가운데 정렬방법*/
+    font-size:20px;
+    font-weight:bold;
+    padding: 5px 15px;
+}
+
