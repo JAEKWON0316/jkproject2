@@ -6,8 +6,9 @@
     <title>My Board</title>
     <link rel="stylesheet" href="css/style.css">
     <Script src="js/jquery.min.js"></Script>
-    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -32,10 +33,12 @@
                         <label>아이디 기억 <input type="checkbox" name="rid" value="rid" id="rid"></label>
                     </div>
                     <button type="submit" class="btn btn-dark btn-block">로그인</button>
+                    <a href="join.html">회원가입</a>
                 </form>
             </aside>
             <!-- /ASIDE -->
             <section>
+                <!--listbox-->
                 <div class="listbox">
                     <h1 class="text-center mb-5">게시판</h1>
                     <div class="d-flex justify-content-between py-4 btn-box">
@@ -142,12 +145,28 @@
                                 <a href="#" class="btn btn-white border-dark">글쓰기</a>
                             </div>
                         </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="검색">
-                            <div class="input-group-append">
-                              <button class="btn btn-dark" type="submit">Go</button>
-                            </div>
-                        </div>                          
+                        <form name="searchform" id="searchform" class="searchform">
+                                <div class="input-group my-3">
+                                    <div class="input-group-prepend">
+                                        <button type="button" 
+                                        class="btn btn-outline-secondary dropdown-toggle" 
+                                        data-toggle="dropdown"
+                                        value="title">
+                                            제목검색
+                                          </button>
+                                          <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="username">이름검색</a>
+                                            <a class="dropdown-item" href="title">제목검색</a>
+                                            <a class="dropdown-item" href="content">내용검색</a>
+                                          </div>
+                                    </div>
+                                    <input type="search" class="form-control" placeholder="검색">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary"><i class="ri-search-line"></i></button>
+                                    </div>
+                                </div>
+                        </form>
+                    <!--/listbox-->                        
                 </div>
             </section>
         </div>

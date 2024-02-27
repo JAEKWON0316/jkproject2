@@ -48,7 +48,9 @@ section{
     padding-left:15px;
     padding-top:15px;
 }
-.listbox{
+.listbox, .register, .write, 
+.member, .memberlist, .update, 
+.contents, .delete{
     background: #fff;
     padding:40px;
 
@@ -120,11 +122,32 @@ section{
     color:#fff;
     text-decoration: none;
 }
-
-.input-group{
-    width:350px;
-    left:calc(50% - 155px);
-}
 .btn-box .btn{
     width:90px;
+}
+/** 검색 **/
+.searchform{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.dropdown-menu{
+   min-width:95%;
+}
+.input-group-prepend{
+    position:relative;
+}
+.searchform .dropdown-item{
+    padding:0.25rem, 1.1rem;
+}
+
+/** register **/
+.registerform{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding:50px;
+}
+.registerform label{
+    display:block;
+    width:160px;
 }
