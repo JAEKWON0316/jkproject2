@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        ul{
+            width:500px;
+            list-style-type:none;
+            margin:50px auto;
+            padding:0;
+        }
+        li{
+            padding-top:10px;
+            padding-bottom:1px;
+        }
+    </style>
+</head>
+<body>
+    <form action="form" method="post">
+        <ul>
+            <li><label>이름</label>
+                <input type="text" name="name">
+            </li>
+            <li><label>암호</label>
+                <input type="password" name="pass">
+            </li>
+            <li><label>성별</label> <!-- label에 label을 싸주면 글씨만 눌러도 라디오박스가 채워진다.(라디오 버튼은 둘중에 하나만 선택가능) 라디오값은 기본값을 하나 선택해놓는것이 좋다.-->
+                <label><input type="radio" name="sex" value="male" checked>남자</label>
+                <label><input type="radio" name="sex" value="female">여자</label>
+            </li>
+            <li><label>좋아하는 편집기</label>  <!-- 체크박스는 다중선택이 가능하다. -->
+                <label><input type="checkbox" name="vscode" value="vscode">vscode</label>
+                <label><input type="checkbox" name="eclipse" value="eclipse">eclipse</label>
+            </li>
+            <li><label>사용하는 운영체제</label>
+                <select name="os" size="3" multiple> <!--mutiple은 다중선택이 가능한 select박스 ,size는 기본값으로 몇개를 보여줄지-->
+                    <option value="win11">윈도우</option>
+                    <option value="mac">메킨토시</option>
+                    <option value="linux">리눅스</option>
+                    <option value="android">안드로이드</option>
+                    <option value="solaris">솔라리스</option>
+                    <option value="etc">기타</option>
+                </select>
+            </li>
+            <li><label>사용중인 컴퓨터 하드웨어는?</label>
+                <select name="hw">
+                    <option value="데스크톱">데스크톱</option>
+                    <option value="노트북">노트북</option>
+                    <option value="웨어러블기기">웨어러블기기</option>
+                </select>
+            </li>
+            <li><label>건의사항</label>
+                <textarea name="content" cols="40" rows="7"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="전송" /> <!-- submit은 form 안에 있어야 전송이 일어난다!!!!!! -->
+            </li>
+        </ul>
+        <input type="hidden" name="button" value="버튼입니다." /> 
+    </form>
+   
+</body>
+</html>
